@@ -1,0 +1,269 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	text-transform: capitalize;
+}
+html{
+	overflow-x: hidden;
+	scroll-padding-top: 5.5rem;
+	scroll-behavior: smooth;
+}
+a{
+	margin: 0; 
+	padding: 0;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	padding: 0;
+	margin: 0;
+}
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+:root{
+	--yellow: #F7A71B;
+	--black: #632F03;
+}
+.heading h1{
+	color: #000;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.heading p{
+	color: #555;
+}
+/*=============== common part ============*/
+
+/*================ navber part start==========================*/
+.navbar{
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	background: #fff;
+	box-shadow: 0 2px 5px #F7A71B;
+}
+.navbar-brand{
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+}
+.navbar-brand span{
+	text-transform: uppercase;
+	color: var(--yellow);
+}
+.nav-item{
+	margin-left: 8px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding: 4px 12px;
+	font-weight: 600;
+	border-radius: 7px;
+	color: #FE7200;
+	transition: .4s;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+	background: var(--yellow);
+	color: var(--black);
+}
+/*================ navber part end ==========================*/
+
+/*================ carousel part start==========================*/
+.banner-image{
+	position: relative;
+	width: 100%;
+	height: 90vh;
+}
+.banner-image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	text-align: center;
+}
+.banner-content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.banner-content h1{
+	font-size: 80px;
+	color: var(--yellow);
+	text-shadow: 0 4px 4px #000;
+}
+.banner-content p{
+	color: #fff;
+	font-weight: 700;
+}
+.content-3 p{
+	color: #666;
+}
+.btn{
+	color: #000;
+	text-transform: capitalize;
+	font-weight: 700;
+	background: var(--yellow);
+	border-radius: 0;
+	margin-top: 20px;
+}
+.btn:hover{
+	background: var(--yellow);
+	color: var(--black);
+}
+.swiper-pagination-bullet{
+	width: 30px;
+	height: 30px;
+	background: var(--yellow);
+}
+/*================ carousel part end ==========================*/
+/*================ about part start ==========================*/
+.about-part{
+	background: #eee;
+	padding-bottom: 30px;
+}
+.heading{
+	padding: 50px 0;
+}
+.about-image img{
+	width: 100%;
+}
+.content{
+	margin-top: 50px;
+}
+.content h2{
+	margin-bottom: 10px;
+	font-size: 36px;
+}
+.content h6{
+	color: #444;
+}
+/*================ about part end ==========================*/
+/*================ service part start ==========================*/
+.service-part{
+	padding-bottom: 40px;
+	background: #f1fbff;
+}
+.service-box{
+	background: #111;
+	color: #fff;
+	padding: 35px 25px 20px;
+	border-radius: 4px;
+}
+.service-box i{
+	font-size: 26px;
+}
+.service-box h4{
+	padding: 10px;
+}
+/*================ service part end ==========================*/
+/*================ protfolio part start ==========================*/
+.protfolio-part{
+	background: #eaf5ff;
+	padding-bottom: 40px;
+}
+.project-box{
+	background: #fff;
+}
+.project-img img{
+	width: 100%;
+}
+.project-box{
+	padding: 15px;
+}
+.project-con{
+	padding: 0 20px;
+}
+.project-box h4{
+	font-weight: 700;
+	padding: 18px 0 10px 0;
+}
+.project-con p{
+	font-weight: 400;
+}
+/*================ protfolio part end ==========================*/
+/*================ team part start ==========================*/
+.team-part{
+	background: #eee;
+	padding-bottom: 40px;
+}
+.team-box{
+	background: #fff;
+	box-shadow: 1px 1px 6px 1px #666;
+	transition: .4s;
+}
+.team-box:hover{
+	box-shadow: 1px 1px 13px 1px #666;
+}
+.team-img{
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 50%;
+	box-shadow: 1px 1px 4px 1px #888;
+}
+.team-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.team-con{
+	padding: 0;
+}
+.team-con h4{
+	font-weight: 600;
+}
+.team-con p{
+	margin-bottom: 20px;
+}
+.team-con i{
+	margin-right: 10px;
+	color: #000;
+	font-size: 20px;
+}
+/*================ team part end ==========================*/
+/*================ contact part start ==========================*/
+.contact-part{
+	padding-bottom: 50px;
+	background: #f1fbff;
+}
+form{
+	background: #fff;
+	padding: 20px;
+}
+.input-box{
+	margin-bottom: 20px;
+}
+.input-box input{
+	font-size: 22px;
+}
+.input-box textarea{
+	font-size: 20px;
+}
+.input-box .btn{
+	border-radius: 5px;
+}
+/*================ contact part end ==========================*/
+
+/*================ footer part start ==========================*/
+footer{
+	background: #eee;
+	padding: 10px 0;
+}
+footer p{
+	font-weight: 600;
+}
+footer p span{
+	color: var(--yellow);
+}
